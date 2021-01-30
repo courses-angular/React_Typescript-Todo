@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.px1{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.mt2{
+  margin-top: 2rem;
+}
+.todo{
+  margin-bottom: 1rem;
+}
+.todo.completed span{
+  text-decoration: line-through;
+}
+.todo label{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1rem;
+  background: #f3f3f3;
+
+}
+.todo i{
+  z-index: 2;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+}
+.dialog{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  background: #fff;
+  padding: 1rem 2rem;
+}
+.dialog_body{
+  min-height: 50px;
+}
+.material-icons.close{
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  box-shadow: none;
+  background: transparent !important;
+}
+button{
+  margin-right: 1rem;
+}
+
+
